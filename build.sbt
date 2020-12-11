@@ -23,7 +23,7 @@ libraryDependencies ++= Seq(
     "io.monix" %% "monix" % "3.2.2",
     "com.github.t3hnar" %% "scala-bcrypt" % "4.1",
     "io.jvm.uuid" %% "scala-uuid" % "0.3.1",
-    "org.reactivemongo" %% "play2-reactivemongo" % "1.0.0-play27"
+    "org.reactivemongo" %% "play2-reactivemongo" % "1.0.1-play28"
 )
 
 swaggerDomainNameSpaces := Seq("models")
