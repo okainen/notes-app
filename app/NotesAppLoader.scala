@@ -21,7 +21,7 @@ import services.{AuthService, MailerService, PostService}
 import slick.basic.DatabaseConfig
 import slick.jdbc.JdbcProfile
 
-class NotesAppLoader extends ApplicationLoader {
+class NotesApiLoader extends ApplicationLoader {
   def load(context: Context): Application = {
     new AppComponents(context).application
   }

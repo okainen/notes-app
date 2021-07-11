@@ -1,4 +1,4 @@
-name := """notes-app"""
+name := """notes-api"""
 
 version := "1.0"
 

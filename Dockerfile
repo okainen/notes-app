@@ -22,12 +22,12 @@ ENV PATH="/usr/local/bin/jdk-15.0.1/bin:${PATH}"
 ENV PORT=80
 EXPOSE 80
 
-COPY . /opt/notes-backend
+COPY . /opt/notes-api
 
-WORKDIR /opt/notes-backend
+WORKDIR /opt/notes-api
 
 RUN sbt dist \
-  && unzip ./target/universal/notes-app-1.0.zip -d ./target/universal \
-  && chmod +x ./target/universal/notes-app-1.0/bin/notes-app
+  && unzip ./target/universal/notes-api-1.0.zip -d ./target/universal \
+  && chmod +x ./target/universal/notes-api-1.0/bin/notes-api
 
-CMD ./target/universal/notes-app-1.0/bin/notes-app
+CMD ./target/universal/notes-api-1.0/bin/notes-api
